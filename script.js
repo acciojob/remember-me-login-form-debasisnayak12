@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 			localStorage.removeItem('loginDetails');
 		}
 		alert("Logged in as " + username);
+
+		existingBtn.style.display = "block";
 	});
 
 	let saveDetails = JSON.parse(localStorage.getItem('loginDetails'));
