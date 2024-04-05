@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 		e.preventDefault();
 	let username = document.getElementById('username').value;
 	let password = document.getElementById('password').value;
-	let isCheck = document.getElementById('check').checked;
+	let isCheck = document.getElementById('checkbox').checked;
 		if(isCheck){
 			let loginDetails = {username,password};
 			localStorage.setItem('loginDetails',JSON.stringify(loginDetails));
